@@ -1,0 +1,134 @@
+*{
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+body{
+	background-color: rgba(226,226,226,1);
+	background: -moz-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(201,199,201,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(226,226,226,1)), color-stop(100%, rgba(201,199,201,1)));
+	background: -webkit-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(201,199,201,1) 100%);
+	background: -o-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(201,199,201,1) 100%);
+	background: -ms-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(201,199,201,1) 100%);
+	background: linear-gradient(to bottom, rgba(226,226,226,1) 0%, rgba(201,199,201,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#c9c7c9', GradientType=0 );
+}
+
+
+#conteneur{
+	background-color: white;
+	width: 1000px;
+	margin:auto;
+}
+header{
+	height: 150px;
+	background-color:dodgerblue;
+}
+
+nav{
+	height: 60px;
+	background-color:green;
+}
+
+
+/* j'enlève les éléments de décoration spécifique aux liens*/
+a{
+	color:inherit;
+	text-decoration:inherit;
+}
+
+
+nav ul{
+	list-style-type:none;
+	width:600px;
+	margin: auto;
+	height: 100%;
+}
+/* toutes les balises a dans li de classe float son en block*/
+li.float a{
+	text-align:center;
+	display:block;
+	width: 150px;	
+	line-height:60px;
+	box-sizing: border-box;
+	color: white;
+	font-size: 1.2em;
+	/* permet de creer le dégradé du fond */
+	background: rgba(76,76,76,1);
+	background: -moz-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(51,50,51,1) 50%, rgba(76,76,76,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(76,76,76,1)), color-stop(50%, rgba(51,50,51,1)), color-stop(100%, rgba(76,76,76,1)));
+	background: -webkit-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(51,50,51,1) 50%, rgba(76,76,76,1) 100%);
+	background: -o-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(51,50,51,1) 50%, rgba(76,76,76,1) 100%);
+	background: -ms-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(51,50,51,1) 50%, rgba(76,76,76,1) 100%);
+	background: linear-gradient(to bottom, rgba(76,76,76,1) 0%, rgba(51,50,51,1) 50%, rgba(76,76,76,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#4c4c4c', GradientType=0 );
+}
+ 
+li.float a:hover{
+	background: rgba(51,50,51,1);
+	background: -moz-linear-gradient(top, rgba(51,50,51,1) 0%, rgba(76,76,76,1) 50%, rgba(51,50,51,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(51,50,51,1)), color-stop(50%, rgba(76,76,76,1)), color-stop(100%, rgba(51,50,51,1)));
+	background: -webkit-linear-gradient(top, rgba(51,50,51,1) 0%, rgba(76,76,76,1) 50%, rgba(51,50,51,1) 100%);
+	background: -o-linear-gradient(top, rgba(51,50,51,1) 0%, rgba(76,76,76,1) 50%, rgba(51,50,51,1) 100%);
+	background: -ms-linear-gradient(top, rgba(51,50,51,1) 0%, rgba(76,76,76,1) 50%, rgba(51,50,51,1) 100%);
+	background: linear-gradient(to bottom, rgba(51,50,51,1) 0%, rgba(76,76,76,1) 50%, rgba(51,50,51,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333233', endColorstr='#333233', GradientType=0 );
+	
+}
+/* la classe active permet de différencier dans le menu la page sur la quelle je me trouve*/
+li.float a.active{
+	font-weight:bold;
+	background: rgba(89,162,189,1);
+	background: -moz-linear-gradient(top, rgba(89,162,189,1) 0%, rgba(39,118,214,1) 50%, rgba(89,162,189,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(89,162,189,1)), color-stop(50%, rgba(39,118,214,1)), color-stop(100%, rgba(89,162,189,1)));
+	background: -webkit-linear-gradient(top, rgba(89,162,189,1) 0%, rgba(39,118,214,1) 50%, rgba(89,162,189,1) 100%);
+	background: -o-linear-gradient(top, rgba(89,162,189,1) 0%, rgba(39,118,214,1) 50%, rgba(89,162,189,1) 100%);
+	background: -ms-linear-gradient(top, rgba(89,162,189,1) 0%, rgba(39,118,214,1) 50%, rgba(89,162,189,1) 100%);
+	background: linear-gradient(to bottom, rgba(89,162,189,1) 0%, rgba(39,118,214,1) 50%, rgba(89,162,189,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#59a2bd', endColorstr='#59a2bd', GradientType=0 );
+}
+li.float a.active:hover{
+	background: rgba(39,118,214,1);
+	background: -moz-linear-gradient(top, rgba(39,118,214,1) 0%, rgba(89,162,189,1) 50%, rgba(39,118,214,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(39,118,214,1)), color-stop(50%, rgba(89,162,189,1)), color-stop(100%, rgba(39,118,214,1)));
+	background: -webkit-linear-gradient(top, rgba(39,118,214,1) 0%, rgba(89,162,189,1) 50%, rgba(39,118,214,1) 100%);
+	background: -o-linear-gradient(top, rgba(39,118,214,1) 0%, rgba(89,162,189,1) 50%, rgba(39,118,214,1) 100%);
+	background: -ms-linear-gradient(top, rgba(39,118,214,1) 0%, rgba(89,162,189,1) 50%, rgba(39,118,214,1) 100%);
+	background: linear-gradient(to bottom, rgba(39,118,214,1) 0%, rgba(89,162,189,1) 50%, rgba(39,118,214,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2776d6', endColorstr='#2776d6', GradientType=0 );
+}
+/* cette classe permet de créer un séparateur pour mon menu. il faut ensuite l'appliquer aux élements "a" de votre menu */
+.barreDroite{
+	border-right: 2px solid black;
+}
+
+
+.test{
+	/* postion:relative; */
+}
+ul ul {
+	display:none;
+}
+
+li.sousmenu a{
+	display:block;
+	width: 150px;
+	height: 30px;
+	line-height:.30px;
+	color: white;
+	font-size: 1.1em;
+}
+
+li:hover ul.niveau2{
+	
+}
+
+
+/* les classes float et clear permettent de faire floater mes élemnts et de clear à la fin */
+.float{
+	float:left;
+}
+.clear{
+	clear:left;
+}
