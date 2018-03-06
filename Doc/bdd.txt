@@ -23,6 +23,14 @@ TABLE Evenement hérite de post + :
 	date event
 	lieu event
 	
+TABLE Invitation
+	id invitation
+	id post (FK)
+	? invit (All ou Custom)
+	id membre (FK)
+	
+	
+	
 TABLE Catégorie
 	id catégorie
 	nom catégorie
